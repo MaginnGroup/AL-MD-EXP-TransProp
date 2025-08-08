@@ -1,0 +1,19 @@
+
+define seed  as 57576
+
+include opls.playmol
+include heptane.playmol
+include co2.playmol
+
+box         lengths 	50.0 50.0 50.0 #Angstrom
+
+packmol     seed 	$seed
+packmol     retry	0.95 
+packmol     pack	mol(CO2)   10 
+packmol     pack	mol(C1)  1000
+packmol     action execute
+
+write       lmp/models  box.lmp
+write       pdb         box.pdb
+
+

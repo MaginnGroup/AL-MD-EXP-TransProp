@@ -1,0 +1,29 @@
+
+atom	C1	CH3      0.0 
+atom	C2	CH2      0.0 
+atom	C3	CH2      0.0 
+atom	C4	CH2      0.0 
+atom	C5	CH2      0.0 
+atom	C6	CH2      0.0 
+atom	C7	CH3      0.0 
+
+bond    C1 C2
+bond    C2 C3
+bond    C3 C4
+bond    C4 C5
+bond    C5 C6
+bond    C6 C7
+
+build 
+7
+C7  2.696  -0.929   0.607  
+C6  2.393   0.258  -0.317  
+C5  0.909   0.412  -0.689  
+C4  0.005   0.840   0.481  
+C3 -1.482   1.057   0.117  
+C2 -2.413  -0.150   0.337  
+C1 -2.140  -1.376  -0.542  
+
+
+
+
