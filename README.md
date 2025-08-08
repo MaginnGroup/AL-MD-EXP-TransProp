@@ -1,7 +1,5 @@
 ## Electronic Supporting File Repository
 
-**Authors:** Gabriela B. Correa, Eliseo Marin-Rimoldi, Frederico W. Tavares, and Edward J. Maginn
-
 This repository contains the supporting files for the article:  
 **_Active Learning for Transport Property Prediction in CO₂–Hydrocarbon Systems: A Multi-Fidelity Approach Integrating Molecular Dynamics and Experiments_**
 
