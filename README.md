@@ -5,8 +5,7 @@
 This repository contains the supporting files for the article:  
 **_Active Learning for Transport Property Prediction in CO₂–Hydrocarbon Systems: A Multi-Fidelity Approach Integrating Molecular Dynamics and Experiments_**
 
-The repository is divided into two main folders. Each main folder is organized into subdirectories corresponding to the binary and ternary systems studied:  
-**CO₂/n-heptane**, **CO₂/benzene**, **toluene/n-hexane**, and **CO₂/ethanol/dibenzyl ether**.
+The repository is divided into two main folders. Each main folder is organized into subdirectories corresponding to the binary and ternary systems studied: **CO₂/n-heptane**, **CO₂/benzene**, **toluene/n-hexane**, and **CO₂/ethanol/dibenzyl ether**.
 
 1. **`Active_Learning/`**
    Contains scripts and datasets used in the active learning workflows:
