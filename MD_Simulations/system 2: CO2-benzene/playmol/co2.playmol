@@ -1,0 +1,10 @@
+
+atom_type       co2       $pair_style  0.4692  3.720     			
+
+mass	co2 	 44.010 
+
+atom	CO2	co2     0.0 
+
+build 
+1
+CO2 0.00 0.00 0.00  

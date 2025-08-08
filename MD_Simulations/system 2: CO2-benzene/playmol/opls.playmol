@@ -1,0 +1,19 @@
+
+define	pair_style     as lj/cut
+define	bond_style     as harmonic
+define	angle_style    as harmonic
+define	dihedral_style as opls
+define	improper_style as harmonic
+
+atom_type       CH      $pair_style  0.1100  3.7500
+			
+mass	CH 	 13.019  #cd
+
+bond_type	CH  CH	$bond_style	  469.0  1.400   
+
+angle_type	CH  CH  CH 	$angle_style	  85.0	120.0
+
+dihedral_type	CH   CH  CH  CH  $dihedral_style 0.000   7.25   0.000  0.00	
+
+
+
