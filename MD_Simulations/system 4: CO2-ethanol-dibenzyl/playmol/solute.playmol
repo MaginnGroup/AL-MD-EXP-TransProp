@@ -1,0 +1,82 @@
+
+atom_type       cd      $pair_style  0.110    3.75
+atom_type       ca      $pair_style  0.070    3.55
+atom_type       c21     $pair_style  0.118    3.80
+atom_type       os1     $pair_style  0.140    2.90
+			
+mass	cd 	 13.019  
+mass	ca 	 12.011  
+mass	c21 	 14.027
+mass	os1 	 15.999
+
+bond_type	os1  c21 	$bond_style	  320.0  1.410
+bond_type	c21  ca 	$bond_style	  317.0  1.510
+bond_type	ca   cd 	$bond_style	  469.0  1.400 
+bond_type	cd   cd 	$bond_style	  469.0  1.400 
+
+angle_type	c21  os1  c21 	$angle_style	  60.0  109.5
+angle_type	os1  c21  ca 	$angle_style	  50.0	109.5
+angle_type	c21  ca  cd 	$angle_style	  70.0	120.0
+angle_type	ca   cd  cd 	$angle_style	  85.0	120.0
+angle_type	cd   ca  cd 	$angle_style	  85.0	120.0
+angle_type	cd   cd  cd 	$angle_style	  85.0	120.0
+
+dihedral_type	os1  c21 ca cd  $dihedral_style 0.000   0.000   0.000  0.00
+dihedral_type	c21 os1 c21 ca  $dihedral_style 0.650  -0.250   0.670  0.00 
+dihedral_type	c21  ca  cd  cd  $dihedral_style 0.000   7.25   0.000  0.00
+dihedral_type	cd   cd  cd  cd  $dihedral_style 0.000   7.25   0.000  0.00
+dihedral_type	ca   cd  cd  cd  $dihedral_style 0.000   7.25   0.000  0.00	
+dihedral_type	cd   ca  cd  cd  $dihedral_style 0.000   7.25   0.000  0.00	
+
+improper_type   ca c21 cd cd   $improper_style    2.2	0
+
+atom  C00   c21   0.191
+atom  O01   os1  -0.382
+atom  C02   c21   0.191
+atom  C03   ca   0.0
+atom  C04   cd   0.0 
+atom  C05   cd   0.0
+atom  C06   cd   0.0
+atom  C07   cd   0.0
+atom  C08   cd   0.0
+atom  C09   ca   0.0 
+atom  C0A   cd   0.0   
+atom  C0B   cd   0.0
+atom  C0C   cd   0.0
+atom  C0D   cd   0.0
+atom  C0E   cd   0.0
+
+bond  C00  O01
+bond  C02  O01
+bond  C02  C03
+bond  C03  C04
+bond  C04  C05
+bond  C05  C06
+bond  C06  C07
+bond  C07  C08
+bond  C08  C03
+bond  C00  C09
+bond  C09 C0A
+bond  C0A C0B
+bond  C0B C0C
+bond  C0C C0D
+bond  C0D C0E
+bond  C0E C09
+
+build
+15
+C00    1.000   1.000   0.000
+O01   -0.424   1.000   0.000
+C02   -0.965   1.000   1.318
+C03   -2.473   0.998   1.252
+C04   -3.218   0.393   2.274
+C05   -4.614   0.386   2.226
+C06   -5.280   0.982   1.157
+C07   -4.549   1.586   0.136
+C08   -3.157   1.641   0.209
+C09    1.542   0.998  -1.411
+C0A    0.702   0.997  -2.535
+C0B    1.235   0.994  -3.825
+C0C    2.616   0.992  -4.008
+C0D    3.461   0.993  -2.901
+C0E    2.931   0.996  -1.612
