@@ -1,0 +1,40 @@
+
+define	pair_style     as lj/cut
+define	bond_style     as harmonic
+define	angle_style    as harmonic
+define	dihedral_style as opls
+define	improper_style as harmonic
+
+atom_type       C       $pair_style  0.0700  3.5500     
+atom_type       CH      $pair_style  0.1100  3.7500
+atom_type	CH3	$pair_style  0.1750  3.9050 	
+atom_type	CH2	$pair_style  0.1180  3.9050 		
+
+mass	C 	 12.011  #ca
+mass	CH 	 13.019  #cd
+mass	CH3 	 15.034 
+mass	CH2 	 14.027
+
+bond_type	CH  C	$bond_style	  469.0  1.400   
+bond_type	CH  CH	$bond_style	  469.0  1.400   
+bond_type	CH3 C	$bond_style	  317.0  1.510
+bond_type	CH3 CH2	$bond_style	  260.0  1.526
+bond_type	CH2 CH2	$bond_style	  260.0  1.526
+
+angle_type	C   CH  CH 	$angle_style	  85.0	120.0
+angle_type	CH  C   CH 	$angle_style	  85.0	120.0
+angle_type	CH  CH  CH 	$angle_style	  85.0	120.0
+angle_type	CH  C   CH3 	$angle_style	  85.0	120.0
+angle_type	CH2 CH2 CH2	$angle_style	  63.0  112.4
+angle_type	CH3 CH2 CH2	$angle_style	  63.0  112.4
+
+dihedral_type	CH3  CH2 CH2 CH2 $dihedral_style  1.411  -0.271  3.145  0.00
+dihedral_type	CH2  CH2 CH2 CH2 $dihedral_style  1.411  -0.271  3.145  0.00
+dihedral_type	CH   CH  CH  CH  $dihedral_style 0.000   7.25   0.000  0.00	
+dihedral_type	CH   CH  CH  C 	 $dihedral_style 0.000   7.25   0.000  0.00
+dihedral_type	CH   CH  C   CH	 $dihedral_style 0.000   7.25   0.000  0.00
+dihedral_type	CH   CH  C   CH3 $dihedral_style 0.000   7.25   0.000  0.00
+
+improper_type   C CH3 CH CH   $improper_style    2.2	0
+
+

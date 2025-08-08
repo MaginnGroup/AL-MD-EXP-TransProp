@@ -1,0 +1,21 @@
+
+define seed  as 57576
+
+include opls.playmol
+include hexane.playmol
+include toluene.playmol
+
+improper    search
+
+box         lengths 	90.0 90.0 90.0 #Angstrom
+
+packmol     seed 	$seed
+packmol     retry	0.95 
+packmol     pack	mol(C1H)  100 # 1900  1500  1000   500   100
+packmol     pack	mol(C1T)  1900  # 100   500   1000  1500  1900
+packmol     action execute
+
+write       lmp/models  box.lmp
+write       pdb         box.pdb
+
+

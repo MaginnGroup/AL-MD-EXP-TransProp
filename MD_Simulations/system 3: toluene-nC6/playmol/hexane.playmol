@@ -1,0 +1,26 @@
+
+atom	C1H	CH3      0.0 
+atom	C2H	CH2      0.0 
+atom	C3H	CH2      0.0 
+atom	C4H	CH2      0.0 
+atom	C5H	CH2      0.0 
+atom	C6H	CH3      0.0 
+
+bond    C1H C2H
+bond    C2H C3H
+bond    C3H C4H
+bond    C4H C5H
+bond    C5H C6H
+
+build 
+6 
+C6H  -0.503   0.749   0.041  
+C5H  -1.887   1.417   0.037  
+C4H  -3.034   0.556  -0.519 
+C3H  -3.317  -0.725   0.281  
+C2H  -4.541  -1.521  -0.205  
+C1H  -5.893  -0.851   0.075  
+
+
+
+

@@ -1,0 +1,28 @@
+
+atom	C7T	CH3     0.0 
+atom	C4T	C       0.0 
+atom	C3T	CH      0.0 
+atom	C2T	CH      0.0 
+atom	C1T	CH      0.0 
+atom	C6T	CH      0.0 
+atom	C5T	CH      0.0 
+
+bond    C7T C4T
+bond    C5T C4T
+bond    C5T C6T
+bond    C1T C6T
+bond    C1T C2T
+bond    C2T C3T
+bond    C4T C3T
+
+build 
+7
+C7T -2.460   0.001  -0.005  
+C4T -0.947   0.000  -0.000  
+C3T -0.225   1.203  -0.017  
+C2T  1.172   1.205  -0.018  
+C1T  1.876  -0.002   0.001  
+C6T  1.170  -1.208   0.014  
+C5T -0.227  -1.204   0.015  
+
+
